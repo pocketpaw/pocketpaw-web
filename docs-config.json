@@ -7,8 +7,8 @@
   "branding": {
     "favicon": "/paw.webp",
     "logo": {
-      "light": "/logo-light.svg",
-      "dark": "/logo-dark.svg",
+      "light": "/paw.webp",
+      "dark": "/paw.webp",
       "href": "/"
     },
     "colors": {
@@ -643,7 +643,7 @@
     ],
     "enableJsonLd": true,
     "organizationName": "PocketPaw",
-    "organizationLogo": "/logo-light.svg",
+    "organizationLogo": "/paw.webp",
     "articleType": "TechArticle",
     "autoCanonical": true,
     "enableBreadcrumbs": true,
