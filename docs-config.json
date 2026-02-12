@@ -5,7 +5,7 @@
     "version": "1.0.0"
   },
   "branding": {
-    "favicon": "/favicon.svg",
+    "favicon": "/paw.webp",
     "logo": {
       "light": "/logo-light.svg",
       "dark": "/logo-dark.svg",
