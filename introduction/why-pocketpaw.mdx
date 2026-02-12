@@ -93,16 +93,12 @@ PocketPaw takes security seriously with seven independent defense layers:
 PocketPaw's core is lightweight (~10 packages). Everything else is an optional extra:
 
 ```bash
-# Core only
-pip install pocketpaw
+# One-line install
+curl -fsSL https://pocketpaw.xyz/install.sh | sh
 
-# With specific channels
+# Or with pip — pick your extras
 pip install pocketpaw[telegram,discord,slack]
-
-# With all tools
 pip install pocketpaw[all-tools]
-
-# Everything
 pip install pocketpaw[all]
 ```
 

@@ -2300,8 +2300,7 @@
             <div class="terminal-bar"><i></i><i></i><i></i></div>
             <div class="terminal-body">
               <code
-                ><span class="prompt">$</span> pip install pocketpaw &&
-                pocketpaw</code
+                ><span class="prompt">$</span> curl -fsSL https://pocketpaw.xyz/install.sh | sh</code
               >
               <button class="copy-btn" onclick="copyCmd(this)">
                 <svg
@@ -2530,7 +2529,7 @@
             <div class="compare-hero-time">30<small>s</small></div>
             <div class="compare-hero-unit">to your first message</div>
             <div class="compare-right-cmd">
-              <span class="prompt">$ </span>pip install pocketpaw && pocketpaw
+              <span class="prompt">$ </span>curl -fsSL https://pocketpaw.xyz/install.sh | sh
             </div>
             <ul class="compare-checks">
               <li><span class="check">&#10003;</span> Dashboard running</li>
@@ -2580,8 +2579,8 @@
             <div class="terminal-bar"><i></i><i></i><i></i></div>
             <div class="terminal-body">
               <code
-                ><span class="prompt">$</span> pip install pocketpaw
-                <span class="comment"># Thin core, 30 seconds</span>
+                ><span class="prompt">$</span> curl -fsSL https://pocketpaw.xyz/install.sh | sh
+                <span class="comment"># Interactive installer</span>
                 <span class="prompt">$</span> pip install pocketpaw<span
                   class="hl"
                   >[memory]</span
@@ -3088,8 +3087,7 @@
             <div class="terminal-bar"><i></i><i></i><i></i></div>
             <div class="terminal-body">
               <code
-                ><span class="prompt">$</span> pip install pocketpaw &&
-                pocketpaw</code
+                ><span class="prompt">$</span> curl -fsSL https://pocketpaw.xyz/install.sh | sh</code
               >
               <button class="copy-btn" onclick="copyCmd(this)">
                 <svg
@@ -3201,7 +3199,7 @@
       /* ── Copy ── */
       function copyCmd(btn) {
         navigator.clipboard
-          .writeText("pip install pocketpaw && pocketpaw")
+          .writeText("curl -fsSL https://pocketpaw.xyz/install.sh | sh")
           .then(function () {
             var label = btn.querySelector(".copy-label");
             if (label) label.textContent = "Copied";
@@ -3873,5 +3871,8 @@
         });
       })();
     </script>
+
+    <!-- Floating Beta Badge -->
+    <div style="position:fixed;bottom:20px;right:20px;z-index:9999;background:rgba(10,132,255,.12);backdrop-filter:blur(12px);-webkit-backdrop-filter:blur(12px);border:1px solid rgba(10,132,255,.25);border-radius:8px;padding:6px 14px;font-family:'Plus Jakarta Sans',sans-serif;font-size:12px;font-weight:600;letter-spacing:.04em;color:#0A84FF;pointer-events:none;user-select:none;text-transform:uppercase">beta</div>
   </body>
 </html>

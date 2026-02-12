@@ -1206,7 +1206,7 @@ window.__unocss = {
       <div class="terminal terminal--glow">
         <div class="terminal-bar"><i></i><i></i><i></i></div>
         <div class="terminal-body">
-          <code><span class="prompt">$</span> pip install pocketpaw && pocketpaw</code>
+          <code><span class="prompt">$</span> curl -fsSL https://pocketpaw.xyz/install.sh | sh</code>
           <button class="copy-btn" onclick="copyCmd(this)"><svg class="copy-icon" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="9" y="9" width="13" height="13" rx="2"/><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"/></svg><span class="copy-label">Copy</span></button>
         </div>
       </div>
@@ -1321,7 +1321,7 @@ window.__unocss = {
           </div>
           <div class="compare-hero-time">30<small>s</small></div>
           <div class="compare-hero-unit">to your first message</div>
-          <div class="compare-right-cmd"><span class="prompt">$ </span>pip install pocketpaw && pocketpaw</div>
+          <div class="compare-right-cmd"><span class="prompt">$ </span>curl -fsSL https://pocketpaw.xyz/install.sh | sh</div>
           <ul class="compare-checks">
             <li><span class="check">&#10003;</span> Dashboard running</li>
             <li><span class="check">&#10003;</span> Credentials encrypted</li>
@@ -1366,7 +1366,7 @@ window.__unocss = {
       <div class="terminal terminal--multi" style="max-width:700px;margin-top:40px">
         <div class="terminal-bar"><i></i><i></i><i></i></div>
         <div class="terminal-body">
-          <code><span class="prompt">$</span> pip install pocketpaw              <span class="comment"># Thin core, 30 seconds</span>
+          <code><span class="prompt">$</span> curl -fsSL https://pocketpaw.xyz/install.sh | sh  <span class="comment"># Interactive installer</span>
 <span class="prompt">$</span> pip install pocketpaw<span class="hl">[memory]</span>     <span class="comment"># Add Mem0 semantic search</span>
 <span class="prompt">$</span> pip install pocketpaw<span class="hl">[all]</span>        <span class="comment"># Everything, all channels</span></code>
         </div>
@@ -1698,7 +1698,7 @@ window.__unocss = {
       <div class="terminal">
         <div class="terminal-bar"><i></i><i></i><i></i></div>
         <div class="terminal-body">
-          <code><span class="prompt">$</span> pip install pocketpaw && pocketpaw</code>
+          <code><span class="prompt">$</span> curl -fsSL https://pocketpaw.xyz/install.sh | sh</code>
           <button class="copy-btn" onclick="copyCmd(this)"><svg class="copy-icon" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="9" y="9" width="13" height="13" rx="2"/><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"/></svg><span class="copy-label">Copy</span></button>
         </div>
       </div>
@@ -1786,7 +1786,7 @@ document.querySelectorAll('.scroll-text').forEach(el=>{
 
 /* ── Copy ── */
 function copyCmd(btn){
-  navigator.clipboard.writeText('pip install pocketpaw && pocketpaw').then(()=>{
+  navigator.clipboard.writeText('curl -fsSL https://pocketpaw.xyz/install.sh | sh').then(()=>{
     const label=btn.querySelector('.copy-label');
     if(label)label.textContent='Copied';
     btn.classList.add('copied');
@@ -2145,5 +2145,8 @@ function copyCmd(btn){
   });
 })();
 </script>
+
+<!-- Floating Beta Badge -->
+<div style="position:fixed;bottom:20px;right:20px;z-index:9999;background:rgba(10,132,255,.12);backdrop-filter:blur(12px);-webkit-backdrop-filter:blur(12px);border:1px solid rgba(10,132,255,.25);border-radius:8px;padding:6px 14px;font-family:'Plus Jakarta Sans',sans-serif;font-size:12px;font-weight:600;letter-spacing:.04em;color:#0A84FF;pointer-events:none;user-select:none;text-transform:uppercase">beta</div>
 </body>
 </html>

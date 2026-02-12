@@ -25,6 +25,7 @@ RUN apt-get update && apt-get install -y \
 
 # Install PocketPaw
 RUN pip install pocketpaw[recommended]
+# Or: RUN curl -fsSL https://pocketpaw.xyz/install.sh | sh
 
 # Create data directory
 RUN mkdir -p /root/.pocketclaw

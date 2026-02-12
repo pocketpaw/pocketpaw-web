@@ -16,8 +16,11 @@ PocketPaw supports WhatsApp through two modes: **Business API** (requires Meta a
 Personal mode uses the `neonize` library to connect via WhatsApp Web's multi-device protocol. Just scan a QR code — no Meta Business account, webhooks, or tunnels required.
 
 <Steps>
-  <Step title="Install the extra">
+  <Step title="Install">
     ```bash
+    curl -fsSL https://pocketpaw.xyz/install.sh | sh
+
+    # Or add the WhatsApp extra manually
     pip install pocketpaw[whatsapp-personal]
     ```
   </Step>
